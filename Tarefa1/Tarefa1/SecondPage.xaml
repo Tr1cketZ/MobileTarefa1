@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarefa1.SecondPage"
+             Title="SecondPage">
+
+
+    <ScrollView>
+        <VerticalStackLayout 
+        Padding="30,0"
+        Spacing="25">
+        
+        
+        <Label 
+            Text="Parabens Você está no Level 2!"
+            Style="{StaticResource Headline}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label
+                Text=""
+                x:Name="CounterBtn"
+                Style="{StaticResource Headline}"
+                SemanticProperties.Hint="Numero de vezes que clicou"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                Text="Ganhar Cliques" 
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+             x:Name="NextLevelBtn"
+             Text="Vamos vencer!"
+             SemanticProperties.Hint="Botão para vencer"
+             Clicked="OnNextLevelClicked"
+            HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
